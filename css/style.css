@@ -4,6 +4,7 @@
     margin: 0 auto;
     background: red;
     overflow: hidden;
+    position: relative;
 }
 
 ul {
@@ -18,5 +19,26 @@ li {
 img {
     width: 500px;
     height: 500px;
-    
+}
+
+#prev,
+#next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
+
+#prev:hover,
+#next:hover {
+    cursor: pointer;
+}
+
+#prev {
+    left: 15px;
+}
+
+#next {
+    right: 15px;
 }
